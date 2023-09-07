@@ -1,0 +1,1 @@
+export const PANAROMASWAP_GRANTS_PROPOSAL_DESCRIPTION = `# Panaromaswap Grants Program v0.2`;

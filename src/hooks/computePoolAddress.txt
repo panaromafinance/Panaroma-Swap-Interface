@@ -1,0 +1,49 @@
+import { contractAbi } from './PanaromaswapV2edgeFactory'
+// import { Token } from '@panaromafinance/panaromaswap_sdkcore'
+// import { FeeAmount } from '@panaromafinance/panaromaswap_v2edgesdk'
+
+const Web3EthContract = require('web3-eth-contract')
+const INFURA_KEY = process.env.REACT_APP_INFURA_KEY
+if (typeof INFURA_KEY === 'undefined') {
+  throw new Error(`REACT_APP_INFURA_KEY must be a defined environment variable`)
+}
+
+export class facAddress{
+
+  ADDRESS : []
+
+  getAddress(
+    factoryAddress,
+    tokenA,
+    tokenB,
+    fee
+  ) {
+    // console.log(tokenA, tokenB)
+    const { address: addressA } = tokenA
+    const { address: addressB } = tokenB
+    const key = `${factoryAddress}:${addressA}:${addressB}:${fee.toString()}`
+
+    Web3EthContract.setProvider(`https://ropsten.infura.io/v3/${INFURA_KEY}`)
+    const contract = new Web3EthContract(contractAbi, '0x89538C05630E6a6128f36A902b8a6217C17181EA')
+    contract.options.address = '0x89538C05630E6a6128f36A902b8a6217C17181EA'
+    let promise = new Promise( (resolve, reject) => {
+      resolve(contract.methods.getPool(tokenA.address, tokenB.address, fee).call())
+    })
+    // const _address = contract.methods.getPool(tokenA.address, tokenB.address, fee).call()
+    // if (!_address) {
+    
+    promise.then( (result) => { 
+      // console.log(result)
+      this.ADDRESS= result
+      console.log(this.ADDRESS)
+      return this.ADDRESS
+    })
+    console.log(this.ADDRESS)
+
+  }
+
+  // getAddress() {
+  //   console.log(this.ADDRESS)
+  //   return this.ADDRESS
+  // }
+}

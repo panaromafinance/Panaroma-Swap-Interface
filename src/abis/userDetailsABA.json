@@ -1,0 +1,50 @@
+[
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+            {
+          "internalType": "address",
+          "name": "_parent",
+          "type": "address"
+            }
+        ],
+      "name": "createRefAddress",
+      "outputs": [
+            {
+          "internalType": "address",
+          "name": "_pair",
+          "type": "address"
+            }
+        ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+            {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+            }
+        ],
+      "name": "getUserInfo",
+      "outputs": [
+            {
+          "internalType": "address",
+          "name": "_pair",
+          "type": "address"
+            },
+            {
+          "internalType": "address",
+          "name": "_parent",
+          "type": "address"
+            }
+        ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+]

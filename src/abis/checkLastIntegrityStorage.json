@@ -1,0 +1,36 @@
+[
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        }
+      ],
+      "name": "checkAnalysis",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "User",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "UserStatus",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "UpdatedTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "RansomwarePercentage",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]

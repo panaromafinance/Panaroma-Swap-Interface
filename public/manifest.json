@@ -1,0 +1,21 @@
+{
+  "background_color": "#fff",
+  "display": "standalone",
+  "homepage_url": "https://app.panaromaswap.org",
+  "providedBy": { "name": "Panaswap", "url": "https://panaromaswap.org" },
+  "icons": [
+    {
+      "src": "./images/panaicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "orientation": "portrait",
+  "name": "Panaswap",
+  "description": "Swap or provide liquidity on the Panaswap Protocol",
+  "iconPath": "./images/panaicon.png",
+  "short_name": "Panaswap",
+  "start_url": ".",
+  "theme_color": "#3772FF"
+}
