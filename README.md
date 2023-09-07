@@ -1,2 +1,2 @@
-# Panaroma-Swap-Interface
+# Panaroma Swap Interface
 Panorama Swap stands as a groundbreaking platform that combines unparalleled security, on-chain compliance, and multi-DEX access to revolutionize the DeFi landscape. By prioritizing the security of user funds, embracing compliance protocols, and offering seamless access to multiple DEX platforms, Panorama Swap sets new standards for safety, legitimacy, and convenience. With its user-friendly interface, advanced features, and commitment to community governance, Panorama Swap is poised to shape the future of decentralized finance and empower individuals to harness the full potential of blockchain technology.
